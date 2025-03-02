@@ -80,13 +80,19 @@ The `sense_uart_tx` module enables **sensor-driven UART transmission**, ensuring
 
 </details>
 
-###  System Architecture
+### System Architecture
 <details>
 <summary>Block diagram</summary>
+
+![Block diagram](https://github.com/user-attachments/assets/15f9116a-ffa7-4ca3-90fa-f3e1a19eab03)
+
 </details>
 
 <details>
 <summary>Circuit diagram</summary>
+
+![Circuit diagram](https://github.com/user-attachments/assets/de674840-445b-4f92-8f14-888fd27434d0)
+
 </details>
 
 ###  Synthesis & Programming
@@ -120,6 +126,7 @@ sudo make terminal
 <details>
   <summary>Demo Video</summary>
 
-[![Watch the Demo](https://github.com/user-attachments/assets/2e41d50e-7fb5-4c2e-9296-9f6e4c054e18)](https://github.com/user-attachments/assets/2e41d50e-7fb5-4c2e-9296-9f6e4c054e18)
+![Watch the Demo](https://github.com/user-attachments/assets/4ce16e78-e394-4b0d-826d-901246b7e372)
 
 </details>
+
