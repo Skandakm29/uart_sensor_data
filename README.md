@@ -5,12 +5,10 @@ Design and implement a **UART transmitter** that sends real-time **sensor data**
 
 ---
 
-## Contents:
 
-###  Study the Existing Code
+##  1.Study the Existing Code
 
-<details>
-<summary>Module Analysis</summary>
+## Module Analysis
 
 ### **Architecture Overview**
 The `sense_uart_tx` module enables **sensor-driven UART transmission**, ensuring efficient and structured data transfer. The architecture includes:
@@ -78,26 +76,50 @@ The `sense_uart_tx` module enables **sensor-driven UART transmission**, ensuring
    - Holds **32-bit sensor data**.
    - Sequentially shifts **8 bits per transmission cycle**.
 
-</details>
 
-### System Architecture
+## 2.System Architecture
+
+## Block diagram
 <details>
-<summary>Block diagram</summary>
+   <summary>Block diagram</summary>
 
-![Block diagram](https://github.com/user-attachments/assets/15f9116a-ffa7-4ca3-90fa-f3e1a19eab03)
+   ![Block diagram](https://github.com/user-attachments/assets/15f9116a-ffa7-4ca3-90fa-f3e1a19eab03)
+   This block diagram illustrates an **FPGA-based UART transmission system** for sensor data.
+
+### **Sensor Section**
+- **Sensor Interface** → Captures raw data.
+- **Data Processing** → Filters/formats the data.
+- **Data Buffer** → Stores processed data before transmission.
+
+### **FPGA Section**
+- **Baud Rate Generator** → Generates clock for UART.
+- **Data Buffer** → Stores sensor data for transmission.
+- **TX Shift Register** → Shifts data bit by bit.
+- **UART TX Logic** → Handles start, data, and stop bits.
+- **State Machine** → Controls the transmission sequence.
+
+### **Data Flow**
+1. Sensor collects and processes data.
+2. FPGA buffers and prepares it for UART.
+3. TX Shift Register formats the data.
+4. UART TX Logic transmits it serially.
+5. State Machine ensures correct timing.
 
 </details>
+
+## Circuit Diagram
 
 <details>
-<summary>Circuit diagram</summary>
+   <summary>Circuit diagram</summary>
 
-![Circuit diagram](https://github.com/user-attachments/assets/de674840-445b-4f92-8f14-888fd27434d0)
+   ![Circuit diagram](https://github.com/user-attachments/assets/de674840-445b-4f92-8f14-888fd27434d0)
 
 </details>
+
 
 ###  Synthesis & Programming
-<details>
-  <summary>Testing and Output</summary>
+
+## Testing and Output
 
 ## **Clone & Setup Repository**
 ```bash
@@ -120,13 +142,14 @@ Uploads the bitstream to the FPGA.
 ```bash
 sudo make terminal
 ```
-</details>
+
 
 ### UART Transmission Showcase
-<details>
-  <summary>Demo Video</summary>
 
-![Watch the Demo](https://github.com/user-attachments/assets/4ce16e78-e394-4b0d-826d-901246b7e372)
+## Demo Video
 
-</details>
+   ![Watch the Demo](https://github.com/user-attachments/assets/4ce16e78-e394-4b0d-826d-901246b7e372)
+
+
+
 
