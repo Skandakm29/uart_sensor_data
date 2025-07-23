@@ -6,7 +6,7 @@ Design and implement a **UART transmitter** that sends real-time **sensor data**
 ---
 
 
-# 1.Study the Existing Code
+# Study the Existing Code
 
 ## Module Analysis
 
@@ -77,7 +77,7 @@ The `sense_uart_tx` module enables **sensor-driven UART transmission**, ensuring
    - Sequentially shifts **8 bits per transmission cycle**.
 
 
-# 2.System Architecture
+# System Architecture
 
 ## Block diagram
 <details>
@@ -117,7 +117,7 @@ The `sense_uart_tx` module enables **sensor-driven UART transmission**, ensuring
 </details>
 
 
-#  3.Synthesis & Programming
+#  Synthesis & Programming
 
 ## Testing and Output
 
@@ -144,7 +144,7 @@ sudo make terminal
 ```
 
 
-# 4.UART Transmission Showcase
+# UART Transmission Showcase
 
 ## Demo Video
 
